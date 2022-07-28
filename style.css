@@ -100,6 +100,20 @@ html {
     position: relative;
     width: 100%;
     height: 100vh;
+    font-size: 5rem;
+    font-family: "Poppins", roboto;
+    color: white;
+    position: relative;
+}
+
+.section-1-heading {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-size: 10rem;
+    font-family: "Poppins", roboto;
+    color: white;
+    position: relative;
 }
 /* logo */
 .logo {
@@ -139,8 +153,9 @@ html {
     background: url(images/AboutMe.png) center no-repeat;
     background-size: cover;
     background-clip: content-box;
-    border: 1rem double #fff;
+    border: 1rem double burlywood;
     margin-left: -10rem;
+    opacity: .8;
 }
 .circle-2 {
     background: url(images/UXDesigns.png) center no-repeat;
@@ -150,7 +165,7 @@ html {
     margin-right: -10rem;
 }
 .circle-3 {
-    background: url(images/ContactMe.png) center no-repeat;
+    background: url(images/AB\ Testing.png) center no-repeat;
     background-size: cover;
     background-clip: content-box;
     border: 1rem double #fff;
@@ -383,10 +398,10 @@ html {
     padding: 0.5rem;
     margin: 1rem 0;
     background-color: white;
-    border: .1rem solid yellow;
+    border: .1rem solid grey;
     font-size: 1.7rem;
     font-weight: bold;
-    color: #aaa;
+    color: black;
     letter-spacing: 0.1rem;
     height: 5rem;
 }
@@ -401,7 +416,7 @@ html {
     height: 5rem;
     background-color: #03989E;
     border: none;
-    align-self: flex-start;
+    align-items: center;
     font-size: 1.8rem;
     color: #fff;
 }
@@ -445,6 +460,27 @@ html {
 /* end of slideshow */
 
 /* End of Section 3 */
+
+/* About me Text */
+.about-me {
+    font-size: .7rem;
+    font-weight: 500;
+    color: #03989E;
+    letter-spacing: .1rem;
+    margin: 0 auto 1rem 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.aboutme-image {
+    width: 55rem;
+    height: 55rem;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+}
+/* About me Text ending */
 
 /* Responsive */
 @media (max-width: 1500px) {
@@ -636,5 +672,14 @@ html {
   .form-heading {
     font-size: 5rem;
   }
+  .slideshow {
+    justify-content: center;
+    transform: translateX(-50%);
+}
+
+.featured-text {
+    visibility: hidden;
+    opacity: 0;
+}
 }
 /* End of Responsive */
