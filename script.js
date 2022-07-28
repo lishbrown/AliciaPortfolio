@@ -108,9 +108,8 @@ document.body.addEventListener("mousemove", (e) => {
     // Form Validation
     const form = document.querySelector(".contact-form");
     const username = document.getElementById("name");
-    const username = document.getElementById("email");
-    const username = document.getElementById("subject");
-    const username = document.getElementById("message");
+    const email = document.getElementById("email");
+    const subject = document.getElementById("subject");
     const messages = document.querySelectorAll(".message");
 
     const error = (input, message) => {
