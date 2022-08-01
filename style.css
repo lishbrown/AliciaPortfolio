@@ -150,7 +150,7 @@ html {
     transition: left 0.5s, top 0.5s; 
 }
 .circle-1 {
-    background: url(images/AboutMe.png) center no-repeat;
+    background: url(images/ABTesting.png) center no-repeat;
     background-size: cover;
     background-clip: content-box;
     border: 1rem double burlywood;
@@ -159,20 +159,6 @@ html {
 }
 .circle-2 {
     background: url(images/UXDesigns.png) center no-repeat;
-    background-size: cover;
-    background-clip: content-box;
-    border: 1rem double #fff;
-    margin-right: -10rem;
-}
-.circle-3 {
-    background: url(images/AB\ Testing.png) center no-repeat;
-    background-size: cover;
-    background-clip: content-box;
-    border: 1rem double #fff;
-    margin-left: -10rem;
-}
-.circle-4 {
-    background: url(images/WritingSamples.png) center no-repeat;
     background-size: cover;
     background-clip: content-box;
     border: 1rem double #fff;
@@ -331,14 +317,14 @@ html {
  .service {
      width: 70%;
      margin: 2rem 0;
-     border-bottom: .5rem solid #9b0e0e;
+     border-bottom: .5rem solid white;
  }
 
  .service-btn {
      width: 100;
      position: relative;
      display: block;
-     height: 20rem;
+     height: 15rem;
  }
 
  .service-btn span {
@@ -368,6 +354,18 @@ html {
     opacity: 1;
     transition: height 0.5s, opacity 0.5s 0.5s;
  }
+
+ .service-heading {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 8rem;
+    font-family: "Poppins", roboto;
+    font-style: italic;
+    color: black;
+    font-size: 10rem;
+    top: 7%;
+}
 
 /* End of services */
 /* End of Section 2 */
@@ -447,6 +445,7 @@ html {
     width: 50rem;
     margin-top: 10rem;
     padding: 0 2rem;
+    position: center;
 }
 
 .slideshow-link {
@@ -461,26 +460,41 @@ html {
 
 /* End of Section 3 */
 
-/* About me Text */
+/* About me */
+/* About me heading */
+.about-me-heading {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 8rem;
+    font-family: "Poppins", roboto;
+    font-style: italic;
+    color: black;
+    font-size: 10rem;
+    top: 7%;
+}
+/* About me heading end */
+/* about me text */
 .about-me {
-    font-size: .7rem;
-    font-weight: 500;
-    color: #03989E;
-    letter-spacing: .1rem;
-    margin: 0 auto 1rem 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s;
+    width: 70%;
+    margin: 2rem 0;
+    color: black;
+    font-size: large;
+    top: 5%;
+    position: relative;
 }
+/* end of about me text */
+/* about me image */
 
-.aboutme-image {
-    width: 55rem;
-    height: 55rem;
-    position: absolute;
-    overflow: hidden;
+.about-image {
+    width: 75rem;
+    height: 75rem;
+    position: relative;
     border-radius: 50%;
+    overflow: hidden;
 }
-/* About me Text ending */
+/* end of about me image */
+/* About me ending */
 
 /* Responsive */
 @media (max-width: 1500px) {
@@ -640,7 +654,7 @@ html {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 360px) {
  html {
     font-size: 35%;
  }
