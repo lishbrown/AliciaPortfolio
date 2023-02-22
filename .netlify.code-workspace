@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".netlify"
+		},
+		{
+			"path": "images"
+		},
+		{
+			"path": "Pages"
+		}
+	]
+}
